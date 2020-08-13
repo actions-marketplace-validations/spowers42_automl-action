@@ -1,5 +1,5 @@
 import os, ast
-from uuid import uuid
+from uuid import uuid4 as uuid
 import pandas as pd
 
 dataset = os.environ['INPUT_DATASET']
@@ -14,7 +14,7 @@ data.head()
 if usecase == 'regression':
     from pycaret.regression import *
 elif usecase == 'classification':
-    from pycaret.cassification import *
+    from pycaret.classification import *
 else:
     raise NotImplementedError("The use case {usecase} is not currently supported")
 
