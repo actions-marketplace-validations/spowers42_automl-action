@@ -1,0 +1,28 @@
+name: "PyCaret autoML"
+description: "A simple example autoML using pycaret"
+author: "Scott Powers"
+inputs:
+  DATASET:
+    description: "The training dataset csv"
+    required: true
+    default: "juice"
+  TARGET:
+    description: "The target variable column"
+    required: true
+    default: "Purchase"
+  USECASE:
+    description: "Use case type (classification, regression)"
+    required: true
+    default: "classification"
+
+outputs:
+  myOutput:
+    description: "output from the action"
+
+runs: 
+  using: "docker"
+  image: "Dockerfile"
+
+branding:
+  icon: 'box'
+  color: 'blue'
