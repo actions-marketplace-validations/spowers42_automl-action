@@ -7,7 +7,7 @@ target = os.environ['INPUT_TARGET']
 usecase = os.environ['INPUT_USECASE']
 repo = os.environ['GITHUB_REPOSITORY']
 
-dataset_path = f'https://raw.githubusercontent.com/{repo}/master/{INPUT_DATASET}.csv'
+dataset_path = f'https://raw.githubusercontent.com/{repo}/master/{dataset}.csv'
 data = pd.read_csv(dataset_path)
 data.head()
 
