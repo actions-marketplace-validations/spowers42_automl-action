@@ -2,7 +2,7 @@ name: "PyCaret autoML"
 description: "A simple example autoML using pycaret"
 author: "Scott Powers"
 inputs:
-  DATASET:
+  INPUT_DATASET:
     description: "The training dataset csv"
     required: true
     default: "juice"
